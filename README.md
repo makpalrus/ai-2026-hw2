@@ -326,5 +326,3 @@ the analysis, not a shortcut around it. In Sublab Hard in particular the
 temptation is real — you are asked to rank six candidates by the model's own
 scores, so a model that also writes your written answers is marking its own
 homework. Your answers have to be about *your* run.
-#   a i - 2 0 2 6 - h w 2  
- 
