@@ -1,0 +1,159 @@
+{
+  "A": {
+    "tokens_by_turn": {
+      "1": 687,
+      "2": 784,
+      "3": 857,
+      "4": 918,
+      "5": 974,
+      "6": 1088,
+      "7": 1199,
+      "8": 1287,
+      "9": 1382,
+      "11": 1476,
+      "12": 1574
+    },
+    "probes": [
+      {
+        "id": "Q-1",
+        "retrieved": true,
+        "reply": "You are **Daniyar Qoshan**, applicant **A-202**.",
+        "tokens": 1613,
+        "expect_contains": [
+          "A-202"
+        ]
+      },
+      {
+        "id": "Q-2",
+        "retrieved": true,
+        "reply": "Your **id_card** is still missing from the file.",
+        "tokens": 1611,
+        "expect_contains": [
+          "id_card",
+          "id card"
+        ]
+      },
+      {
+        "id": "Q-3",
+        "retrieved": true,
+        "reply": "Your record lists your income band as **2**, which corresponds to a grant amount of **150,000 KZT**.",
+        "tokens": 1616,
+        "expect_contains": [
+          "150000",
+          "150,000"
+        ]
+      },
+      {
+        "id": "Q-4",
+        "retrieved": true,
+        "reply": "You said you can come to the office on **Thursdays**.",
+        "tokens": 1614,
+        "expect_contains": [
+          "Thursday"
+        ]
+      },
+      {
+        "id": "Q-5",
+        "retrieved": true,
+        "reply": "You asked whether a **scanned letter from your employer** would count or whether the **original** was required. I explained that only the **transcript** and **id_card** are listed as required documents, and the record does not specify whether a scan or original is accepted.",
+        "tokens": 1611,
+        "expect_contains": [
+          "letter",
+          "employer"
+        ]
+      }
+    ],
+    "state": null
+  },
+  "B": {
+    "tokens_by_turn": {
+      "1": 687,
+      "2": 795,
+      "3": 865,
+      "4": 923,
+      "5": 976,
+      "6": 1080,
+      "7": 1158,
+      "8": 1233,
+      "9": 1319,
+      "10": 1718,
+      "11": 951,
+      "12": 1046
+    },
+    "probes": [
+      {
+        "id": "Q-1",
+        "retrieved": true,
+        "reply": "You are **Daniyar Qoshan**, applicant **A-202**.",
+        "tokens": 1089,
+        "expect_contains": [
+          "A-202"
+        ]
+      },
+      {
+        "id": "Q-2",
+        "retrieved": true,
+        "reply": "Your **ID card** is still missing from your file.",
+        "tokens": 1087,
+        "expect_contains": [
+          "id_card",
+          "id card"
+        ]
+      },
+      {
+        "id": "Q-3",
+        "retrieved": true,
+        "reply": "Your recorded income band is **2**, which corresponds to a grant amount of **150,000 KZT**, provided your ID card is added to the record.",
+        "tokens": 1092,
+        "expect_contains": [
+          "150000",
+          "150,000"
+        ]
+      },
+      {
+        "id": "Q-4",
+        "retrieved": true,
+        "reply": "You can come to the office on **Thursdays**.",
+        "tokens": 1090,
+        "expect_contains": [
+          "Thursday"
+        ]
+      },
+      {
+        "id": "Q-5",
+        "retrieved": true,
+        "reply": "You haven’t asked me anything about your employer in the available conversation record.",
+        "tokens": 1087,
+        "expect_contains": [
+          "letter",
+          "employer"
+        ]
+      }
+    ],
+    "state": {
+      "applicant_id": "A-202",
+      "topic": "Need-based study grant eligibility",
+      "facts": [
+        "Applicant stated their name is Daniyar Qoshan.",
+        "Applicant stated they sent their transcript last week.",
+        "Applicant stated their income band is 2 and their family's certificate says so.",
+        "Applicant stated they could not upload their ID card because the scanner at home broke.",
+        "Applicant stated they can only come to the office on Thursdays because they have lab all week otherwise.",
+        "Applicant stated their sister Aruzhan applied last year and is on file."
+      ],
+      "decisions": [
+        "Applicant does not currently qualify because the ID card is missing from the record.",
+        "If the ID card is added and the application qualifies, the grant amount is 150,000 KZT.",
+        "The record does not specify whether the decision would be made on the same day.",
+        "Aruzhan Nurlan qualifies for 250,000 KZT under the 2026 scheme."
+      ],
+      "constraints": [
+        "The ID card must be added to the record for the applicant to qualify.",
+        "The applicant can come to the office only on Thursdays.",
+        "The applicant has lab all week otherwise."
+      ],
+      "open_questions": [],
+      "language": "en+kk"
+    }
+  }
+}
